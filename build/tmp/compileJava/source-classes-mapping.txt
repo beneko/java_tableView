@@ -1,4 +1,6 @@
 org/afpa/App.java
  org.afpa.App
+org/afpa/model/Client.java
+ org.afpa.model.Client
 org/afpa/gui/FormController.java
  org.afpa.gui.FormController

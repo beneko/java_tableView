@@ -11,15 +11,14 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="617.0" prefWidth="729.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.afpa.gui.FormController">
    <children>
       <HBox layoutX="15.0" layoutY="20.0" spacing="30.0">
          <children>
-            <TableView prefHeight="576.0" prefWidth="448.0">
+            <TableView fx:id="tableClient" onMouseClicked="#getDetails" prefHeight="576.0" prefWidth="448.0">
               <columns>
-                <TableColumn prefWidth="75.0" text="Nom" />
-                <TableColumn prefWidth="75.0" text="Prénom" />
+                <TableColumn fx:id="nomCol" prefWidth="75.0" text="Nom" />
+                <TableColumn fx:id="prenomCol" prefWidth="75.0" text="Prénom" />
               </columns>
                <columnResizePolicy>
                   <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
@@ -34,7 +33,7 @@
                               <Font size="16.0" />
                            </font>
                         </Label>
-                        <TextField prefHeight="36.0" prefWidth="207.0" promptText="Nom" />
+                        <TextField fx:id="inputNom" prefHeight="36.0" prefWidth="207.0" promptText="Nom" />
                      </children>
                   </VBox>
                   <VBox>
@@ -44,7 +43,7 @@
                               <Font size="16.0" />
                            </font>
                         </Label>
-                        <TextField prefHeight="36.0" prefWidth="207.0" promptText="Prenom" />
+                        <TextField fx:id="inputPrenom" prefHeight="36.0" prefWidth="207.0" promptText="Prenom" />
                      </children>
                   </VBox>
                   <VBox>
@@ -54,7 +53,7 @@
                               <Font size="16.0" />
                            </font>
                         </Label>
-                        <TextField prefHeight="36.0" prefWidth="207.0" promptText="Ville" />
+                        <TextField fx:id="inputVille" prefHeight="36.0" prefWidth="207.0" promptText="Ville" />
                      </children>
                   </VBox>
                   <VBox alignment="CENTER" spacing="30.0">
